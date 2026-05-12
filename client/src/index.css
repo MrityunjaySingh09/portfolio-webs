@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0a0f1d;
+  --color-brand-neon-purple: #b026ff;
+  --color-brand-neon-blue: #00d2ff;
+  --color-brand-glass-bg: rgba(20, 25, 40, 0.6);
+  --color-brand-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-blue text-white m-0 min-h-screen antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: radial-gradient(circle at top right, #110d28 0%, #0a0f1d 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-brand-glass-bg backdrop-blur-xl border border-brand-glass-border;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-neon-blue to-brand-neon-purple;
+  }
+  .glow {
+    box-shadow: 0 0 20px rgba(176, 38, 255, 0.4);
+  }
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+  }
+}
