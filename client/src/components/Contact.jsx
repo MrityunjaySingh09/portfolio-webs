@@ -44,7 +44,7 @@ const Contact = () => {
 
     try {
       // API call to backend
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('/api/contact', formData);
       
       setStatus({ type: 'success', message: 'Message sent successfully! I will get back to you soon.' });
       setFormData({ name: '', email: '', subject: '', message: '' });

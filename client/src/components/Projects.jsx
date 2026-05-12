@@ -36,7 +36,7 @@ const Projects = () => {
     // Fetch from backend API
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/projects');
+        const response = await axios.get('/api/projects');
         if (response.data && response.data.length > 0) {
           setProjects(response.data);
         } else {

@@ -21,7 +21,7 @@ const AdminDashboard = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/projects');
+      const response = await axios.get('/api/projects');
       setProjects(response.data);
     } catch (error) {
       console.error('Error fetching projects', error);
@@ -50,11 +50,11 @@ const AdminDashboard = () => {
 
     try {
       if (editingId) {
-        await axios.put(`http://localhost:5000/api/projects/${editingId}`, payload, {
+        await axios.put(`/api/projects/${editingId}`, payload, {
           headers: { Authorization: `Bearer ${token}` }
         });
       } else {
-        await axios.post('http://localhost:5000/api/projects', payload, {
+        await axios.post('/api/projects', payload, {
           headers: { Authorization: `Bearer ${token}` }
         });
       }
@@ -86,7 +86,7 @@ const AdminDashboard = () => {
     if (!window.confirm('Are you sure you want to delete this project?')) return;
     const token = localStorage.getItem('adminToken');
     try {
-      await axios.delete(`http://localhost:5000/api/projects/${id}`, {
+      await axios.delete(`/api/projects/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       fetchProjects();
