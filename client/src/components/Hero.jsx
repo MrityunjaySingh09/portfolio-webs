@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, MapPin } from 'lucide-react';
+import { ArrowRight, Download, MapPin, Eye } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-[85vh] flex items-center justify-center relative">
-      {/* 3D or Interactive elements can be placed behind or integrated here */}
       <div className="max-w-4xl w-full flex flex-col items-center text-center z-10">
         
         <motion.div 
@@ -72,6 +71,18 @@ const Hero = () => {
           >
             View Projects <ArrowRight className="ml-2 h-5 w-5" />
           </a>
+
+          {/* ✅ NEW: View Resume button — opens PDF in browser */}
+          <a 
+            href="/Mrityunjay_Singh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-md bg-gradient-to-r from-brand-neon-purple/20 to-brand-neon-blue/20 hover:from-brand-neon-purple/40 hover:to-brand-neon-blue/40 transition-all font-semibold flex items-center justify-center border border-brand-neon-purple/50 text-white"
+          >
+            View Resume <Eye className="ml-2 h-5 w-5" />
+          </a>
+
+          {/* Download Resume */}
           <a 
             href="/Mrityunjay_Singh_Resume.pdf"
             download="Mrityunjay_Singh_Resume.pdf"

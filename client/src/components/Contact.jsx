@@ -172,33 +172,33 @@ const Contact = () => {
             </p>
 
             <div className="space-y-6">
-              <a href="mailto:mrityunjay@example.com" className="flex items-center gap-4 group">
+              <a href="mailto:Mrityunjaysingh899@gmail.com" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-brand-neon-purple/20 group-hover:border-brand-neon-purple transition-all">
                   <Mail size={20} className="text-gray-300 group-hover:text-brand-neon-purple transition-colors" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">Email</p>
-                  <p className="text-white group-hover:text-brand-neon-purple transition-colors">mrityunjay@example.com</p>
+                  <p className="text-white group-hover:text-brand-neon-purple transition-colors">Mrityunjaysingh899@gmail.com</p>
                 </div>
               </a>
 
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://www.linkedin.com/in/mrityunjay-singh-51a2b627a/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-[#0077b5]/20 group-hover:border-[#0077b5] transition-all">
                   <FaLinkedin size={20} className="text-gray-300 group-hover:text-[#0077b5] transition-colors" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">LinkedIn</p>
-                  <p className="text-white group-hover:text-[#0077b5] transition-colors">linkedin.com/in/mrityunjay</p>
+                  <p className="text-white group-hover:text-[#0077b5] transition-colors">linkedin.com/in/mrityunjay-singh</p>
                 </div>
               </a>
 
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://github.com/MrityunjaySingh09" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-white/10 group-hover:border-white transition-all">
                   <FaGithub size={20} className="text-gray-300 group-hover:text-white transition-colors" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">GitHub</p>
-                  <p className="text-white group-hover:text-white transition-colors">github.com/mrityunjay</p>
+                  <p className="text-white group-hover:text-white transition-colors">github.com/MrityunjaySingh09</p>
                 </div>
               </a>
             </div>

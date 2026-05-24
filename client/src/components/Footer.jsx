@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,6 +12,18 @@ const Footer = () => {
             <a href="#home" className="text-sm text-gray-400 hover:text-brand-neon-purple transition-colors">Home</a>
             <a href="#projects" className="text-sm text-gray-400 hover:text-brand-neon-purple transition-colors">Portfolio</a>
             <a href="#contact" className="text-sm text-gray-400 hover:text-brand-neon-purple transition-colors">Contact</a>
+          </div>
+
+          <div className="flex gap-4">
+            <a href="mailto:Mrityunjaysingh899@gmail.com" className="text-gray-400 hover:text-brand-neon-purple transition-colors" aria-label="Email">
+              <Mail size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/mrityunjay-singh-51a2b627a/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0077b5] transition-colors" aria-label="LinkedIn">
+              <FaLinkedin size={18} />
+            </a>
+            <a href="https://github.com/MrityunjaySingh09" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+              <FaGithub size={18} />
+            </a>
           </div>
 
           <div className="text-sm text-gray-500">
