@@ -45,7 +45,7 @@ const Hero = () => {
           className="flex items-center text-gray-400 mb-8"
         >
           <MapPin className="mr-2 h-5 w-5 text-brand-neon-purple" />
-          <span>📍 Bhopal / Kanpur, India</span>
+          <span>📍 Bhopal, India</span>
         </motion.div>
 
         <motion.p 
